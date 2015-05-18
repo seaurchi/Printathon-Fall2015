@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>Printathon Fall 2015</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Lora:700italic|Raleway:400,500,200' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script>
+    var time=0;
+  setInterval(function() {
+    wh = $(window).height();
+    st = $(document).scrollTop();
+    headerop = 1- (st/wh);
+    if (headerop < .15)
+    	headerop = 0;
+
+    $('#headerwrap').css('opacity', headerop);
+
+    /*
+    if (st <= wh) {
+      $('#headerwrap').css('opacity', wh-1);
+    }
+    if (st <= (about.scrollTop() + wh)) {
+      $('#about h3, #about p').css('opacity', ((st)/(about.offset().top)).toFixed(2));
+    }
+    if (st <= (about.offset().top + wh)) {
+      $('#headerwrap').css('opacity', (1-st/(about.offset().top)*0.5) );
+    }*/
+  }, 10);
+  </script>
+
+  </head>
+
+  <body>
+
+	<div id="headerwrap">
+		<div id="text-box center col-lg-6 offset-3">
+			<h1>Printathon</h1>
+			<h2>Fall 2015</h2>
+			<h3>Date | Brandeis University</h3>
+			<button class="custom-btn" href=""><p>Register</p></button>
+		</div>
+	</div><!-- /headerwrap -->
+
+	<div id = "about">
+		<div class="container">
+			<div class="row centered">
+				<h3>On the weekend of March 7th, Deis3D will hold the first Printathon, a 24-hour event in which teams from educational institutions gather and compete to produce a 3D-printed creation attending to criteria divulged at the beginning of the competition by a panel of judges including student leaders, technology specialists and educators.</h3>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Some Frequently Asked Questions</h1>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<h4>How does it work?</h4>
+				<p>You'll work in teams of 3-6 makers to design and 3D print your creation. Only fused filament fabrication (FFF) printers are allowed. Teams will be provided with a theme/challenge during the beginning of the printathon, which although not mandatory, will influence the judgement of your creation. Printing starts on Saturday morning and goes on for 24 hours straight.
+				</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<h4>How do I register?</h4>
+				<p>This year, we’re holding registrations to enter the lottery. You must submit an application before March 2nd, 2015 at 11:59PM EST, after which we will randomly select teams to admit. The admission lottery will operate on a rolling basis; you will have a week to accept your spot once you are accepted. You can register here.
+				</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<h4>What should I bring?</h4>
+				<p>You'll need your student ID to check-in, and we recommend bringing a laptop for slicing and CADing. Teams should also bring their own printers, filament, and printer tools.
+				</p>
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<h4>How much does it cost?</h4>
+				<p>The event is completely free! We'll provide food and drinks, as well as shared printers to be used throughout the event.
+				</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<h4>Who can attend?</h4>
+				<p>All students from any college/university or high school are welcome.
+				</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<h4>What are the judging criteria?</h4>
+				<p>Creations will receive different grades on theme adherence, creativity, complexity, functionality, 3D printed components and presentation.
+				</p>
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+	<div id="orange">
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Judges</h1>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<img class="img-circle" src="images/unsworth.jpg" width="120" alt="">
+				<h4>John Unsworth</h4>
+				<p>CIO at Brandeis University</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img class="img-circle" src="images/mateo.jpg" width="120" alt="">
+				<h4>Mateo Doll</h4>
+				<p>Product Engineer at New Valence Robotics</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img class="img-circle" src="images/noah.jpg" width="120" alt="">
+				<h4>Noah Fram-Schwartz</h4>
+				<p>D Design Lab Lead at Google</p>
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	</div>
+
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Sponsors</h1>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<img src="images/simplify3d.png" href="http://simplify3d.com" width="75%">
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img src="images/shapeways.png" href="http://shapeways.com" width="75%">
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img src="images/NVBots.png" href="http://NVBots.com" width="75%">
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+	<div class="footer">
+		<h2>Get in touch with us</h2>
+		<h2><u>Deis3D@gmail.com</u></h2>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
