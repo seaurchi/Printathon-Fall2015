@@ -6,56 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
 
     <title>Printathon Fall 2015</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-	//paste this code under head tag or in a seperate js file.
-	// Wait for window load
-	$(window).load(function() {
-		var imageArray = [
-			'arch.jpg',
-    		'alpha-helix.jpg', 
-    		'bear.jpg',
-    		'chain.jpg',
-    		'cutie.jpg',
-    		'DNA.jpg',
-    		'glasses.jpg',
-    		'puzzle.jpg',
-    		'eduardos-favourite.jpg',
-    		'hand.jpg',
-    		'wrench.jpg',
-    		'louis.jpg',
-    		'robot-buddy.jpg',
-    		'scorpion.jpg',
-    		'puck.jpg',
-    		'skull.jpg'];
-			var randomImage = Math.floor(Math.random() * 15);
-	    	document.getElementById("headerwrap").style.backgroundImage = "url(images/" + imageArray[randomImage] + ")";
+	<script>
+		//paste this code under head tag or in a seperate js file.
+		// Wait for window load
+		$(window).load(function() {
+			if($(window).width() > 1000){
+			var imageArray = [
+	    		'alpha-helix.jpg', 
+	    		'cutie.jpg',
+	    		'skull.jpg',
+	    		'hand.jpg',
+	    		'scorpion.jpg',
+	    		'robot-buddy.jpg'];
+				var randomImage = Math.floor(Math.random() * 5);
+		    	document.getElementById("headerwrap").style.backgroundImage = "url(images/" + imageArray[randomImage] + ")";
+		    }
 
-	    	var windowheight = $(window).height();
-		    var adjustment = (windowheight - 100)/2;
-		    var height = windowheight + adjustment;
-		    document.getElementById("headerwrap").style.minHeight = height + "px";
-		    document.getElementById("about").style.paddingTop = height + "px";
-		    
-		    document.getElementById("about").style.paddingBottom = adjustment + "px";
+		    	var windowheight = $(window).height();
+			    var adjustment = (windowheight - 100)/2;
+			    var height = windowheight + adjustment;
+			    document.getElementById("headerwrap").style.minHeight = height + "px";
+			    document.getElementById("about").style.paddingTop = height + "px";
+			    
+			    document.getElementById("about").style.paddingBottom = adjustment + "px";
 
-		    $('#wrapper').fadeOut(1000);
-	});
+			    $('#wrapper').fadeOut(1000);
+		});
 
-    	//set height of elements based on window height
-    	//so that opacity scroll looks right on all browser sizes ^.^
-    	//also get a random background image	
-
-
+		//set height of elements based on window height
+		//so that opacity scroll looks right on all browser sizes ^.^
+		//also get a random background image	
 		var time=0;
 		setInterval(function() {
 			wh = $(window).height();
@@ -66,9 +56,10 @@
 
 			$('#headerwrap').css('opacity', headerop);
 		}, 10);
-  </script>
-  </head>
-  <body>
+	</script>
+ </head>
+ 
+ <body>
   <div id="wrapper"></div>
 
 	<div id="headerwrap">
@@ -77,7 +68,10 @@
 			<h2>Fall 2015</h2>
 			<h3>October 3-4</h3>
 			<h3>Brandeis University</h3>
-			<button class="custom-btn" href=""><p>Register</p></button>
+			<a href="http://www.eventbrite.com/e/printathon-fall-2015-tickets-17474552858">
+				<button class="custom-btn"><p>Register</p></button></a>
+			<a href="http://deis3d.org/printathon/">
+				<button class="custom-btn"><p>Spring 2015</p></button></a>
 		</div>
 	</div>
 
@@ -89,114 +83,110 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="container">
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
-				<h1>Some Frequently Asked Questions</h1>
+
+	<div id="blue">	
+		<div class="container">
+			<div class="row mt centered">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h1><b>Some Frequently Asked Questions</b></h1>
+				</div>
 			</div>
-		</div>
-		
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<h4>How does it work?</h4>
-				<p>You'll work in teams of up to 6 makers to design and 3D print your creation. Only fused filament fabrication (FFF) printers are allowed. Teams will be provided with a theme/challenge during the beginning of the Printathon, which although not mandatory, will influence the judgement of your creation. Printing starts on Saturday morning and goes on for 24 hours straight.
-				</p>
+			
+			<div class="row mt centered">
+				<div class="col-lg-4">
+					<h4>How does it work?</h4>
+					<p>You'll work in teams of up to 6 makers to design and 3D print your creation. Only fused filament fabrication (FFF) printers are allowed. Teams will be provided with a theme/challenge during the beginning of the Printathon, which although not mandatory, will influence the judgement of your creation. Printing starts on Saturday morning and goes on for 24 hours straight.
+					</p>
+				</div>
+
+				<div class="col-lg-4">
+					<h4>Who can attend?</h4>
+					<p>All students from any college/university or high school are welcome.
+					</p>
+				</div>
+
+				<div class="col-lg-4">
+					<h4>How do I register?</h4>
+					<p>We'll Just click the register button up above, and complete your registration trough eventbrite. Registrations work on a first come first serve basis, so be sure to register as soon as possible. You can register as individuals and then state your teamamtes preferences, so don't worry about having your whole team register at once.
+					</p>
+				</div>
 			</div>
 
-			<div class="col-lg-4">
-				<h4>Can I register alone? How big should teams be?</h4>
-				<p>Yes! If you are alone or don't have enough people to make a team, you'll be able to form one at the beginning of the event. Teams should be groups of up to 6 people, and your teammates can be from different universities.
-				</p>
+			<div class="row mt centered">
+				<div class="col-lg-4">
+					<h4>Can I register alone? How big should teams be?</h4>
+					<p>Yes! If you are alone or don't have enough people to make a team, you'll be able to form one at the beginning of the event. Teams should be groups of up to 6 people, and your teammates can be from different universities.
+					</p>
+				</div>
+
+				<div class="col-lg-4">
+					<h4>How much does it cost?</h4>
+					<p>The event is completely free! We'll provide food and drinks, as well as shared printers to be used throughout the event.
+					</p>
+				</div>
+
+				<div class="col-lg-4">
+					<h4>What Should I bring?</h4>
+					<p>Participants are encouraged to bring their own printers and any specific filament they plan to use. We'll attempt to ensure every team has at least 2 printers. Deis3D will provide PLA filament, soldering stations, and tools for making small printer repairs. Additionally, computers with MakerBot desktop, Cura, Slic3r, and Simplify3D will be available for slicing prints. These items may be in high demand, so we recommend bringing team gear when possible.
+					</p>
+				</div>
 			</div>
 
-			<div class="col-lg-4">
-				<h4>How much does it cost?</h4>
-				<p>The event is completely free! We'll provide food and drinks, as well as shared printers to be used throughout the event.
-				</p>
-			</div>
-		</div>
+			<div class="row mt centered">
+				<div class="col-lg-4">
+					<h4>What should I make?</h4>
+					<p>Teams will be provided with a theme/challenge during the beginning of the competition, but teams can choose anything to make. You can come with an idea in mind, but we ask that you do not start building or CADing anything before the event starts. We encourage all kinds of ideas, whether it's a proof of concept, a model, or a prototype. Whatever you choose to make, do your best to sell your ideas to the judges.
+					</p>
+				</div>
 
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<h4>Should my team bring a printer and filament?</h4>
-				<p>Teams are encouraged to bring their own printers and any specific filament they plan to use. We'll attempt to provide every team with at least 2 printers. We will have PLA filament for the event, but teams are encouraged to bring their own filament. Due to space constrains, teams are not allowed to bring more than 5 printers.
-				</p>
-			</div>
+				<div class="col-lg-4">
+					<h4>Can my team make more than one creation?</h4>
+					<p>Yes! You can make as many if you want (if you find the time to print everything), but teams will be asked to select a maximum of two creations to be judged.
+					</p>
+				</div>
 
-			<div class="col-lg-4">
-				<h4>How do I register?</h4>
-				<p>We'll Just click the register button up above, and complete your registration trough eventbrite. Registrations work on a first come first serve basis, so be sure to register as soon as possible. You can register as individuals and then state your teamamtes preferences, so don't worry about having your whole team register at once.
-				</p>
-			</div>
-
-			<div class="col-lg-4">
-				<h4>Who can attend?</h4>
-				<p>All students from any college/university or high school are welcome.
-				</p>
-			</div>
-		</div>
-
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<h4>What hardware will be available?</h4>
-				<p>Deis3D will provide some shared 3D printers, PLA filament, soldering stations, and tools for making small printer repairs. Additionally, some computers with MakerBot desktop, Cura, Slic3r, and Simplify3D will be available for slicing prints. These items may be in high demand, so we recommend bringing team gear if possible.
-				</p>
+				<div class="col-lg-4">
+					<h4>What can I print with?</h4>
+					<p>PLA, PVA, PET, nylon, and flexible filaments. If there is a specific material you want to use that is not listed, shoot us an email.
+					</p>
+				</div>
 			</div>
 
-			<div class="col-lg-4">
-				<h4>What should I make?</h4>
-				<p>Teams will be provided with a theme/challenge during the beginning of the competition, but teams can choose anything to make. You can come with an idea in mind, but we ask that you do not start building or CADing anything before the event starts. We encourage all kinds of ideas, whether it's a proof of concept, a model, or a prototype. Whatever you choose to make, do your best to sell your ideas to the judges.
-				</p>
+			<div class="row mt centered">
+				<div class="col-lg-4">
+					<h4>What hardware will be available?</h4>
+					<p>Deis3D will provide some shared 3D printers, PLA filament, soldering stations, and tools for making small printer repairs. Additionally, some computers with MakerBot desktop, Cura, Slic3r, and Simplify3D will be available for slicing prints. These items may be in high demand, so we recommend bringing team gear if possible.
+					</p>
+				</div>
+
+				<div class="col-lg-4">
+					<h4>What is not allowed?</h4>
+					<p>Printing with ABS is not allowed, as well as any procedures that releases strong fumes or smells (such as using acetone or other solvents). We will have superglue available if you need to weld parts together.
+					</p>
+				</div>
+
+				<div class="col-lg-4">
+					<h4>What are the judging criteria?</h4>
+					<p>Creations will receive different grades on theme adherence, creativity, complexity, functionality, 3D printed components and presentation.
+					</p>
+				</div>
 			</div>
 
-			<div class="col-lg-4">
-				<h4>I have a question not listed. Who do I ask?</h4>
-				<p>Get in touch with us through Facebook or email!
-				</p>
-			</div>
-		</div>
-
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<h4>What should I bring?</h4>
-				<p>Deis3D will provide some shared 3D printers, PLA filament, soldering stations, and tools for making small printer repairs. Additionally, some computers with MakerBot desktop, Cura, Slic3r, and Simplify3D will be available for slicing prints. These items may be in high demand, so we recommend bringing team gear if possible.
-				</p>
-			</div>
-
-			<div class="col-lg-4">
-				<h4>What are the judging criteria?</h4>
-				<p>Creations will receive different grades on theme adherence, creativity, complexity, functionality, 3D printed components and presentation.
-				</p>
-			</div>
-
-			<div class="col-lg-4">
-				<h4>Can my team make more than one creation?</h4>
-				<p>Yes! You can make as many if you want (if you find the time to print everything), but teams will be asked to select a maximum of two creations to be judged.
-				</p>
-			</div>
-		</div>
-
-		<div class="row mt centered">
-			<div class="col-lg-4 col-lg-offset-2">
-				<h4>What is not allowed?</h4>
-				<p>Printing with ABS is not allowed, as well as any procedures that releases strong fumes or smells (such as using acetone or other solvents). We will have superglue available if you need to weld parts together.
-				</p>
-			</div>
-
-			<div class="col-lg-4">
-				<h4>What can I print with?</h4>
-				<p>PLA, PVA, PET, nylon, and flexible filaments. If there is a specific material you want to use that is not listed, shoot us an email.
-				</p>
+			<div class="row mt centered">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h4>I have a question not listed. Who do I ask?</h4>
+					<p>Get in touch with us through Facebook or email!
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="orange">
+	<div id="red">
 		<div class="container">
 			<div class="row mt centered">
 				<div class="col-lg-6 col-lg-offset-3">
-					<h1>Judges</h1>
+					<h1><b>Judges</b></h1>
 				</div>
 			</div>
 			
@@ -227,39 +217,43 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
-				<h1>Sponsors</h1>
+	<div id="yellow">
+		<div class="container">
+			<div class="row mt centered">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h1><b>Sponsors</b></h1>
+				</div>
 			</div>
-		</div>
-		
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<img src="images/simplify3d.png" href="http://simplify3d.com" width="75%">
+			
+			<div class="row mt centered">
+				<div class="col-lg-4">
+					<img src="images/simplify3d.png" href="http://simplify3d.com" width="75%">
+				</div>
+
+				<div class="col-lg-4">
+					<img src="images/shapeways.png" href="http://shapeways.com" width="75%">
+				</div><!--/col-lg-4 -->
+
+				<div class="col-lg-4">
+					<img src="images/NVBots.png" href="http://NVBots.com" width="75%">
+				</div>
 			</div>
 
-			<div class="col-lg-4">
-				<img src="images/shapeways.png" href="http://shapeways.com" width="75%">
-			</div><!--/col-lg-4 -->
-
-			<div class="col-lg-4">
-				<img src="images/NVBots.png" href="http://NVBots.com" width="75%">
-			</div>
-		</div>
-
-		<div class="row mt centered">
-			<div class="col-lg-4 col-lg-offset-4">
-				<img src="images/QuantumLogo.png" href="https://quantum3dprinting.com/" width="75%">
+			<div class="row mt centered">
+				<div class="col-lg-4 col-lg-offset-4">
+					<img src="images/QuantumLogo.png" href="https://quantum3dprinting.com/" width="75%">
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="footer">
-		<h2>Get in touch with us</h2>
-		<h2><u>Deis3D@gmail.com</u></h2>
+		<div class="links">
+			<a href="https://www.facebook.com/deis3d?fref=ts"><i class="fa fa-facebook-square fa-3x"></i></a>
+			<a href="https://twitter.com/Deis3DPrinting"><i class="fa fa-twitter-square fa-3x"></i></a>
+			<a href="mailto:Deis3D@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a>
+		</div>
 	</div>
 	
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
